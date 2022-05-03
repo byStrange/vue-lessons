@@ -3,7 +3,7 @@
     <h1>Jobs</h1>
     <ul>
       <li v-for="job in jobs" :key="job.id" class="job">
-        <router-link :to="{ name: 'jobDetails', params: { id: job.id } }">
+        <router-link :to="{ name: 'jobDetails', params: { id: job.id, description: job.description } }">
           <h2>
             {{ job.title }}
           </h2>
@@ -43,6 +43,11 @@ export default {
       ],
     };
   },
+  mounted() {
+    this.jobs.forEach(job => {
+        this.$router.push({ name: 'jobDetails', params: { id: job.id, description: job.description } });
+    })
+}
 };
 </script>
 

@@ -3,6 +3,11 @@
   <div>
     <h1>404</h1>
     <p>Page not found</p>
+    <p>
+        <router-link :to="{ name: 'home' }">
+            <button>Home</button>
+        </router-link>
+    </p>
   </div>
 </template>
 
@@ -10,7 +15,7 @@
 export default {};
 </script>
 
-<style scoped>
+<style scoped lang="stylus">
 /* styles for not found page */
 
 h1 {
@@ -23,5 +28,10 @@ p {
   text-align: center;
   color: #999;
   font-size: 30px;
+}
+p {
+    button {
+        color: red;
+    }
 }
 </style>

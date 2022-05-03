@@ -8,6 +8,9 @@
 <script>
 export default {
     props: ['id'],
+    mounted() {
+        console.log(this.$route);
+    }
     // data() {
     //     return {
     //         id: this.$route.params.id,
