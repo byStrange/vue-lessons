@@ -1,12 +1,24 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link :to="{ name: 'About' }">About</router-link>
+      <router-link :to="{ name: 'home' }">Home</router-link> |
+      <router-link :to="{ name: 'about' }">About</router-link> |
+      <router-link :to="{ name: 'jobs' }">Jobs</router-link>
     </nav>
     <router-view />
   </div>
 </template>
+
+<script>
+export default {
+  name: 'App',
+  data() {
+    return {
+      message: 'Hello Vue!'
+   };
+  }
+}
+</script>
 
 <style>
 #app {
