@@ -12,6 +12,9 @@ import Main from "./components/main/Main.vue";
 export default {
   components: { Header, Main },
   name: "App",
+  mounted() {
+    console.clear()
+  }
 };
 </script>
 
