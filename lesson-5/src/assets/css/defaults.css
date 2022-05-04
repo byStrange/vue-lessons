@@ -44,3 +44,11 @@ body, html {
     color: var(--main-color);
     letter-spacing: .5px
 }
+
+.flex {
+    display: flex;
+}
+
+.flex.center, .center {
+    justify-content: center;
+}

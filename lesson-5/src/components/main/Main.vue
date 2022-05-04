@@ -1,15 +1,17 @@
 <template>
   <div class="main">
     <Background />
+    <Content />
   </div>
 </template>
 
 <script>
-
+import Content from "./Content";
 import Background from "./Background";
+
 export default {
   name: "Main",
-    components: { Background },
+  components: { Background, Content },
 };
 </script>
 

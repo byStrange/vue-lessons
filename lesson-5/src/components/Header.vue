@@ -81,10 +81,11 @@ header {
   }
 }
 
-@media screen and (max-width: 991px) 
+@media screen and (max-width: 991px) {
   header {
     .container {
       justify-content: flex-end !important;
     }
   }
+}
 </style>
