@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+:root {
+    --black: #222222;
+    --main-color: #FD8558;
+    --font-family: "Poppins", "Roboto", sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+}
+
+body, html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav-links:not(.vertical) {
+    display: flex;
+}
+
+.nav-links .item {
+    list-style: none;
+}
+
+.nav-links:not(.vertical) .item:not(:last-child) {
+    margin-right: 30px;
+}
+.link {
+    text-decoration: none;
+    color: var(--black);
+    transition: 150ms;
+    letter-spacing: 1px;
+}
+
+.link:hover {
+    color: var(--main-color);
+    letter-spacing: .5px
+}
