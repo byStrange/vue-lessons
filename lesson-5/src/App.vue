@@ -1,15 +1,18 @@
 <template>
+  <div>
     <Header />
+    <Main />
+  </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import Header from "./components/Header.vue";
+import Main from "./components/Main.vue";
+
 export default {
-  components: { Header },
-  name: 'App'
-}
+  components: { Header, Main },
+  name: "App",
+};
 </script>
 
-<style lang="stylus">
-
-</style>
+<style lang="stylus"></style>
