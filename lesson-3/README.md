@@ -1,4 +1,4 @@
-# color-picker
+# lesson-3
 
 ## Project setup
 ```

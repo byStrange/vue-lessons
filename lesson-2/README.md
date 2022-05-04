@@ -1,4 +1,4 @@
-# second-lesson
+# lesson-2
 
 ## Project setup
 ```
