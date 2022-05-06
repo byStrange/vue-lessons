@@ -1,23 +1,22 @@
 <template>
-  <Page />
+  <Main />
 </template>
 
 <script>
-import Page from './components/page.vue'
+import Main from "./components/Main.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    Page
+    Main,
   },
-}
+};
 </script>
 
 <style>
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 </style>
