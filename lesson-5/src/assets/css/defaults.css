@@ -7,9 +7,10 @@
 }
 
 :root {
+    --text-color: #333333;
     --black: #222222;
     --main-color: #FD8558;
-    --font-family: "Poppins", "Roboto", sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; 
+    --font-family: "Poppins", "Roboto", sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body, html {
