@@ -1,17 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld :msg="helloWorld" />
+    <button @click="counter.num++">{{ counter.num }}</button>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+  },
+};
+</script>
+
+<script setup>
+import { reactive, ref } from "vue";
+const counter = ref({num: 0});
+const helloWorld = "Welcome To  Vue.js App <h1>hello";
 </script>
 
 <style>
